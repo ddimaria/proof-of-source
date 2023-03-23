@@ -1,0 +1,14 @@
+interface erc20 {
+  record state {
+    name: option<string>,
+    symbol: option<string>,
+    balances: list<tuple<string, u64>>
+  }
+  construct: func(state: state, name: string, symbol: string)
+  mint: func(account: string, amount: u64)
+  transfer: func(to: string, amount: u64)
+}
+
+default world contract {
+  export exports: self.erc20
+}

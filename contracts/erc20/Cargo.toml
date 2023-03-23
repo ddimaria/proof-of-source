@@ -1,5 +1,5 @@
 [package]
-name = "contract"
+name = "erc20-wit"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,4 +7,5 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-wit-bindgen = "0.3.0"
+lazy_static = "1.4.0"
+wit-bindgen = { version = "0.4.0" }
