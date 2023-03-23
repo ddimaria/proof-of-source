@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "chain",
+    "contracts/erc20",
+    "runtime",
+    "types",
+    "utils",
+    "web3",
+]
+
+exclude = [
+    "temp"
+]
